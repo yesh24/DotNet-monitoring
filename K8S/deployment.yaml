@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: dotnet-app
-          image: yesh24/dotnet-monitoring::latest # Replace with your Docker image name
+          image: yesh24/dotnet-monitoring:latest # Replace with your Docker image name
           ports:
             - containerPort: 5000 # Expose the port specified in your Dockerfile
 
