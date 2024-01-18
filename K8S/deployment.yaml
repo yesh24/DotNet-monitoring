@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: dotnet-app
-          image: sevenajay/dotnet-monitoring:latest # Replace with your Docker image name
+          image: yesh24/dotnet-monitoring::latest # Replace with your Docker image name
           ports:
             - containerPort: 5000 # Expose the port specified in your Dockerfile
 
@@ -32,4 +32,4 @@ spec:
     - protocol: TCP
       port: 80 # Service port
       targetPort: 5000 # Port in the container
-  type: NodePort # Use NodePort service type            
+  type: LoadBalancer # Use NodePort service type            
